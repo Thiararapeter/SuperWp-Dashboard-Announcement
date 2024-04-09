@@ -1,13 +1,13 @@
 === Superwp Dashboard Announcement ===
 Author URI: https://profiles.wordpress.org/thiarara
-Plugin URI: https://github.com/Thiararapeter/Superwp-Dashboard-Announcement
+Plugin URI: https://wordpress.org/plugins/superwp-dashboard-announcement
 Donate link: https://www.buymeacoffee.com/thiarara
 Contributors: thiarara
 Tags: dashboard announcement, admin dashboard, announcement, Superwp Dashboard Announcement, Admin Announcement, Announcement, dashboard announcement, widget announcement
 Requires at least: 4.7
 Tested up to: 6.4
 Requires PHP: 7.1
-Stable tag: 1.1.01
+Stable tag: 1.2.01
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

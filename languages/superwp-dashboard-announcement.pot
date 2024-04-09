@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Superwp Dashboard Announcement 1.1.02\n"
+"POT-Creation-Date: 2023-04-01 12:00+0000\n"
+"PO-Revision-Date: 2023-04-01 12:00+0000\n"
+"Last-Translator: Thiarara\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: includes/superwp-dashboard-announcement.php:10
+msgid "Superwp Dashboard Announcement"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:11
+msgid "This plugin adds an announcement to the WordPress dashboard, allowing site administrators to easily communicate important updates or messages to their team. It supports customization of the announcement's appearance, including font, size, color, and alignment, and allows for the announcement to be made visible to specific user roles. Additionally, it features a settings page for easy management of announcements and customization options."
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:12
+msgid "1.1.02"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:13
+msgid "Thiarara"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:14
+msgid "https://profiles.wordpress.org/thiarara"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:15
+msgid "superwp-dashboard-announcement"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:16
+msgid "https://wordpress.org/Superwp-Dashboard-Announcement"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:17
+msgid "GPLv2 or later"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:18
+msgid "https://www.gnu.org/licenses/gpl-2.0.html"
+msgstr ""
+
+#: includes/superwp-dashboard-announcement.php:19
+msgid "You should have received a copy of the GNU General Public License along with Superwp Dashboard Announcement. If not, see <https://www.gnu.org/licenses/gpl-2.0.html/>."
+msgstr ""
