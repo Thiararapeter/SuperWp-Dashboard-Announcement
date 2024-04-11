@@ -3,7 +3,7 @@ Author URI: https://profiles.wordpress.org/thiarara
 Plugin URI: https://wordpress.org/plugins/superwp-dashboard-announcement
 Donate link: https://www.buymeacoffee.com/thiarara
 Contributors: thiarara
-Tags: dashboard announcement, admin dashboard, announcement, Superwp Dashboard Announcement, Admin Announcement, Announcement, dashboard announcement, widget announcement
+Tags: dashboard announcement, admin dashboard announcement, Superwp Dashboard Announcement, Admin announcement, dashboard announcement widget
 Requires at least: 4.7
 Tested up to: 6.4
 Requires PHP: 7.1
@@ -49,9 +49,9 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 == Changelog ==
 
 = 1.3.01: April 11, 2024 =
-* Enhanced compatibility with WordPress 6.4.
-* Improved security measures.
-* Minor bug fixes and optimizations.
+- Enhanced compatibility with WordPress 6.4.
+- Improved security measures.
+- Minor bug fixes and optimizations.
 
 = 1.1.01: April 5, 2024 =
 * Birthday of Superwp Dashboard Announcement
@@ -67,9 +67,23 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 == Upgrade Notice ==
 
 = 1.3.01 =
-
-This update ensures compatibility with the latest WordPress version and includes various improvements and bug fixes. We recommend updating to the latest version for the best experience.
+This update introduces several new features and improvements to the Superwp Dashboard Announcement plugin. We recommend updating to the latest version to take advantage of these enhancements.
 
 == Screenshots ==
 
 No Screenshots
+
+## Support
+
+If you encounter any issues or have questions, feel free to [create an issue](https://github.com/yourusername/superwp-dashboard-announcement/issues).
+
+[![Support Superwp Dashboard Announcement](https://www.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/thiarara)
+
+## Developer
+
+Superwp Dashboard Announcement is developed and maintained by [Thiarara](https://profiles.wordpress.org/thiarara).
+For contributions, suggestions, or issues, visit the [GitHub repository](https://github.com/yourusername/superwp-dashboard-announcement).
+
+## License
+
+This plugin is licensed under the GPLv2 or later. See [License](https://www.gnu.org/licenses/gpl-2.0.html) for more information.

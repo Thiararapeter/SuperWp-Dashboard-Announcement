@@ -56,14 +56,14 @@ No Screenshots
 
 ## Support
 
-If you encounter any issues or have questions, feel free to [create an issue](https://github.com/yourusername/superwp-dashboard-announcement/issues).
+If you encounter any issues or have questions, feel free to [create an issue](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues).
 
-[![Support Superwp Dashboard Announcement](https://www.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/thiarara)
+[Donate To Support Superwp Dashboard Announcement](https://www.buymeacoffee.com/thiarara)
 
 ## Developer
 
 Superwp Dashboard Announcement is developed and maintained by [Thiarara](https://profiles.wordpress.org/thiarara).
-For contributions, suggestions, or issues, visit the [GitHub repository](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement).
+For contributions, suggestions, or issues, visit the [GitHub repository](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues).
 
 ## License
 
