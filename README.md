@@ -1,70 +1,53 @@
-=== Superwp Dashboard Announcement ===
-Author URI: https://profiles.wordpress.org/thiarara
-Plugin URI: https://wordpress.org/plugins/superwp-dashboard-announcement
-Donate link: https://www.buymeacoffee.com/thiarara
-Contributors: thiarara
-Tags: dashboard announcement, admin dashboard, announcement, Superwp Dashboard Announcement, Admin Announcement, Announcement, dashboard announcement, widget announcement
-Requires at least: 4.7
-Tested up to: 6.4
-Requires PHP: 7.1
-Stable tag: 1.2.01
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+# Superwp Dashboard Announcement
 
-This plugin adds an announcement to the WordPress dashboard
+![Superwp Dashboard Announcement Logo](https://your-plugin-logo-url.png)
 
-== Description ==
+Superwp Dashboard Announcement is a WordPress plugin that allows you to easily add custom announcements to your WordPress dashboard for all users.
 
-A plugin to display a custom announcement on the WordPress dashboard for all users.
+## Features
 
-== Frequently Asked Questions ==
+- **Custom Announcements**: Display custom announcements on the WordPress dashboard.
+- **Customization Options**: Customize the title, content, font, size, color, alignment, and background color of the announcement.
+- **Collapsible Announcements**: Make announcements collapsible for user convenience.
+- **User Role Targeting**: Display announcements to specific user roles.
+- **New Announcement Badge**: Include a badge to indicate new announcements.
+- **Google Fonts Integration**: Enqueue Google Fonts for custom font options.
 
-= How do I customize the announcement? =
+## Installation
 
-You can customize the announcement by going to the Superwp Dashboard Announcement settings page in your WordPress dashboard. Here, you can set the title, content, font, size, color, alignment, and background color of the announcement.
+1. Go to `Plugins` in the Admin menu.
+2. Click on `Add new`.
+3. Search for `Superwp Dashboard Announcement` and click 'Install Now' or upload `superwp-dashboard-announcement.zip`.
+4. Click on `Activate plugin`.
 
-= Can I make the announcement collapsible? =
+## Frequently Asked Questions
 
-Yes, you can make the announcement collapsible. This feature is available in the settings page of the Superwp Dashboard Announcement plugin. Simply enable the "Collapsible" option to allow users to collapse and expand the announcement.
+- **How do I customize the announcement?**: You can customize the announcement in the plugin settings.
+- **Can I make the announcement collapsible?**: Yes, you can enable the collapsible option in the settings.
+- **How do I display the announcement to specific user roles?**: Use the plugin settings to target specific user roles.
+- **How do I change the duration for the new announcement badge?**: Adjust the duration in the plugin settings.
+- **How do I enqueue Google Fonts for the announcement?**: Google Fonts are automatically enqueued based on your font selections in the settings.
 
-= How do I display the announcement to specific user roles? =
+## Changelog
 
-To display the announcement to specific user roles, go to the Superwp Dashboard Announcement settings page. Here, you can select the user roles that should see the announcement.
+- **1.3.01: April 11, 2024**
+  - Enhanced compatibility with WordPress 6.4.
+  - Improved security measures.
+  - Minor bug fixes and optimizations.
 
-= How do I change the duration for the new announcement badge? =
+- **1.1.01: April 5, 2024**
+  - Initial release of Superwp Dashboard Announcement.
+  - Added customizable announcements with various settings.
+  - Implemented collapsible announcements, new announcement badges, and more.
 
-You can change the duration for the new announcement badge in the Superwp Dashboard Announcement settings page. Simply enter the number of days you want the badge to be displayed for new announcements.
+## Upgrade Notice
 
-= How do I enqueue Google Fonts for the announcement? =
+- **1.3.01**: Ensure compatibility with the latest WordPress version and benefit from improvements and bug fixes.
 
-The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts for the custom font options you select in the settings. You don't need to manually enqueue Google Fonts; the plugin handles it for you.
-
-== Installation ==
-
-1. Go to `Plugins` in the Admin menu
-2. Click on the button `Add new`
-3. Search for `Superwp Dashboard Announcement` and click 'Install Now' or click on the `upload` link to upload `superwp-dashboard-announcement.zip`
-4. Click on `Activate plugin`
-
-== Changelog ==
-
-= 1.1.01: April 5, 2024 =
-* Birthday of Superwp Dashboard Announcement
-* Added the ability to display a custom announcement on the WordPress dashboard for all users.
-* Implemented settings to customize the announcement, including title, content, font, size, color, alignment, and background color.
-* Added the option to make the announcement collapsible.
-* Included a badge to indicate new announcements.
-* Added a settings page to manage the announcement and its display settings.
-* Enqueued Google Fonts for custom font options.
-* Ensured all output is properly escaped for security.
-* Updated the plugin to be compatible with the latest WordPress standards and practices.
-
-== Upgrade Notice ==
-
-= 1.1.01 =
-
-This update introduces several new features and improvements to the Superwp Dashboard Announcement plugin. We recommend updating to the latest version to take advantage of these enhancements.
-
-== Screenshots ==
+## Screenshots
 
 No Screenshots
+
+## License
+
+This plugin is licensed under the GPLv2 or later. See [License](https://www.gnu.org/licenses/gpl-2.0.html) for more information.

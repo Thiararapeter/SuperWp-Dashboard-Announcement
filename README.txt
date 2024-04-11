@@ -7,7 +7,7 @@ Tags: dashboard announcement, admin dashboard, announcement, Superwp Dashboard A
 Requires at least: 4.7
 Tested up to: 6.4
 Requires PHP: 7.1
-Stable tag: 1.2.01
+Stable tag: 1.3.01
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,11 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 
 == Changelog ==
 
+= 1.3.01: April 11, 2024 =
+* Enhanced compatibility with WordPress 6.4.
+* Improved security measures.
+* Minor bug fixes and optimizations.
+
 = 1.1.01: April 5, 2024 =
 * Birthday of Superwp Dashboard Announcement
 * Added the ability to display a custom announcement on the WordPress dashboard for all users.
@@ -61,9 +66,9 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 
 == Upgrade Notice ==
 
-= 1.1.01 =
+= 1.3.01 =
 
-This update introduces several new features and improvements to the Superwp Dashboard Announcement plugin. We recommend updating to the latest version to take advantage of these enhancements.
+This update ensures compatibility with the latest WordPress version and includes various improvements and bug fixes. We recommend updating to the latest version for the best experience.
 
 == Screenshots ==
 
