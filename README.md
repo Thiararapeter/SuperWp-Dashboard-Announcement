@@ -11,7 +11,7 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 - **Collapsible Announcements**: Make announcements collapsible for user convenience.
 - **User Role Targeting**: Display announcements to specific user roles.
 - **New Announcement Badge**: Include a badge to indicate new announcements.
-- **Google Fonts Integration**: Enqueue Google Fonts for custom font options.
+- **Fonts Integration**: Enqueue Fonts for custom font options.
 
 ## Installation
 
@@ -26,7 +26,7 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 - **Can I make the announcement collapsible?**: Yes, you can enable the collapsible option in the settings.
 - **How do I display the announcement to specific user roles?**: Use the plugin settings to target specific user roles.
 - **How do I change the duration for the new announcement badge?**: Adjust the duration in the plugin settings.
-- **How do I enqueue Google Fonts for the announcement?**: Google Fonts are automatically enqueued based on your font selections in the settings.
+- **How do I enqueue Fonts for the announcement?**: Fonts are automatically enqueued based on your font selections in the settings.
 
 ## Changelog
 
@@ -42,7 +42,7 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
   - Added the option to make the announcement collapsible.
   - Included a badge to indicate new announcements.
   - Added a settings page to manage the announcement and its display settings.
-  - Enqueued Google Fonts for custom font options.
+  - Enqueued Fonts for custom font options.
   - Ensured all output is properly escaped for security.
   - Updated the plugin to be compatible with the latest WordPress standards and practices.
 
