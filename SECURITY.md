@@ -26,4 +26,4 @@ If you discover a security vulnerability within our project, we appreciate your 
 3. **Response Time**: We aim to respond to your report within 48 hours.
 4. **Expectations**: If your vulnerability is accepted, we will work with you to develop a fix and publicly disclose the vulnerability in coordination with you. If the vulnerability is declined, we will provide you with a reason.
 
-Your efforts to improve the security of our project are greatly appreciated.```
+Your efforts to improve the security of our project are greatly appreciated.
