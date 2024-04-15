@@ -28,24 +28,6 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 - **How do I change the duration for the new announcement badge?**: Adjust the duration in the plugin settings.
 - **How do I enqueue Fonts for the announcement?**: Fonts are automatically enqueued based on your font selections in the settings.
 
-## Changelog
-
-- **1.3.01: April 11, 2024**
-  - Enhanced compatibility with WordPress 6.4.
-  - Improved security measures.
-  - Minor bug fixes and optimizations.
-
-- **1.1.01: April 5, 2024**
-  - Birthday of Superwp Dashboard Announcement.
-  - Added the ability to display a custom announcement on the WordPress dashboard for all users.
-  - Implemented settings to customize the announcement, including title, content, font, size, color, alignment, and background color.
-  - Added the option to make the announcement collapsible.
-  - Included a badge to indicate new announcements.
-  - Added a settings page to manage the announcement and its display settings.
-  - Enqueued Fonts for custom font options.
-  - Ensured all output is properly escaped for security.
-  - Updated the plugin to be compatible with the latest WordPress standards and practices.
-
 ## Upgrade Notice
 
 - **1.3.01**: Ensure compatibility with the latest WordPress version and benefit from improvements and bug fixes.
@@ -58,7 +40,9 @@ No Screenshots
 
 If you encounter any issues or have questions, feel free to [create an issue](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues).
 
-[Donate To Support Superwp Dashboard Announcement](https://www.buymeacoffee.com/thiarara)
+## Donation
+
+Your support helps us continue to improve Superwp Dashboard Announcement. If you find this plugin useful, please consider [donating](https://www.buymeacoffee.com/thiarara) to support its development.
 
 ## Developer
 
