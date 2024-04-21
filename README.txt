@@ -34,10 +34,10 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 
 ## Screenshots
 
-![Screenshot add new announcement](core\includes\screenshot\Screenshot add new annoucement.png)
-![Screenshot admin dashboard widget display](core\includes\screenshot\Screenshot admin dashboard widget display.png)
-![Screenshot feedback display](core\includes\screenshot\Screenshot feedback display.png)
-![Screenshot setting display](core\includes\screenshot\Screenshot setting display.png)
+![Screenshot add new announcement](core\includes\screenshot\Screenshot1.png)
+![Screenshot admin dashboard widget display](core\includes\screenshot\Screenshot2.png)
+![Screenshot feedback display](core\includes\screenshot\Screenshot3.png)
+![Screenshot setting display](core\includes\screenshot\Screenshot4.png)
 
 ## Support
 
