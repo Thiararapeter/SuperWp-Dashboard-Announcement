@@ -34,14 +34,18 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 
 ## Screenshots
 
-1. ![Add New Announcement](core/includes/screenshot/Screenshot1.png)
-2. ![Admin Dashboard Widget Display](core/includes/screenshot/Screenshot2.png)
-3. ![Feedback Display](core/includes/screenshot/Screenshot3.png)
-4. ![Settings Display](core/includes/screenshot/Screenshot4.png)
+1. Add New Announcement ![Add New Announcement](core/includes/screenshot/Screenshot1.png)
+2. Admin Dashboard Widget Display ![Admin Dashboard Widget Display](core/includes/screenshot/Screenshot2.png)
+3. Feedback Display ![Feedback Display](core/includes/screenshot/Screenshot3.png)
+4. Settings Display ![Settings Display](core/includes/screenshot/Screenshot4.png)
 
 ## Support
 
-If you encounter any issues or have questions, feel free to [create an issue](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues).
+If you encounter any issues or have questions regarding SuperWP Dashboard, please don't hesitate to reach out for help. We're here to assist you in resolving problems and answering any inquiries you might have. For immediate assistance:
+
+- [Create an issue](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues) on our GitHub page.
+
+We aim to provide prompt and effective support to enhance your experience with our dashboard.
 
 ## Donate
 
