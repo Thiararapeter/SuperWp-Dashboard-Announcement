@@ -1,6 +1,6 @@
 # Superwp Dashboard Announcement
 
-![Superwp Dashboard Announcement Logo](core/includes/screenshot/logo.png)
+<img src="core/includes/screenshot/logo.png" width="100" alt="Superwp Dashboard Announcement Logo">
 
 Superwp Dashboard Announcement is a WordPress plugin that allows you to easily add custom announcements to your WordPress dashboard for all users.
 
