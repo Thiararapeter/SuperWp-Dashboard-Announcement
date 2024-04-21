@@ -89,6 +89,8 @@ This update addresses various display issues and improves the overall functional
 
 == Screenshots ==
 
+## Screenshots
+
 1. ![Add New Announcement](core/includes/screenshot/Screenshot_add_new_announcement.png)
 2. ![Admin Dashboard Widget Display](core/includes/screenshot/Screenshot_admin_dashboard_widget_display.png)
 3. ![Feedback Display](core/includes/screenshot/Screenshot_feedback_display.png)
