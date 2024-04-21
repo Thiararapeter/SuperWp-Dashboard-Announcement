@@ -43,7 +43,11 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 
 If you encounter any issues or have questions, feel free to [create an issue](https://github.com/Thiararapeter/Superwp-Dashboard-Announcement/issues).
 
-[Donate To Support Superwp Dashboard Announcement](https://www.buymeacoffee.com/thiarara)
+## Donate
+
+If you find SuperWP Dashboard helpful and would like to support its ongoing development, please consider making a donation. Your support is greatly appreciated and will help maintain and improve the dashboard. Click the link below to contribute:
+
+[Donate to Support SuperWP Dashboard Announcement](https://www.buymeacoffee.com/thiarara)
 
 ## Developer
 
