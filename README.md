@@ -1,6 +1,6 @@
 # Superwp Dashboard Announcement
 
-![Superwp Dashboard Announcement Logo](https://your-plugin-logo-url.png)
+![Superwp Dashboard Announcement Logo](core/includes/screenshot/logo.png)
 
 Superwp Dashboard Announcement is a WordPress plugin that allows you to easily add custom announcements to your WordPress dashboard for all users.
 
@@ -28,31 +28,16 @@ Superwp Dashboard Announcement is a WordPress plugin that allows you to easily a
 - **How do I change the duration for the new announcement badge?**: Adjust the duration in the plugin settings.
 - **How do I enqueue Fonts for the announcement?**: Fonts are automatically enqueued based on your font selections in the settings.
 
-## Changelog
-
-- **1.3.01: April 11, 2024**
-  - Enhanced compatibility with WordPress 6.4.
-  - Improved security measures.
-  - Minor bug fixes and optimizations.
-
-- **1.1.01: April 5, 2024**
-  - Birthday of Superwp Dashboard Announcement.
-  - Added the ability to display a custom announcement on the WordPress dashboard for all users.
-  - Implemented settings to customize the announcement, including title, content, font, size, color, alignment, and background color.
-  - Added the option to make the announcement collapsible.
-  - Included a badge to indicate new announcements.
-  - Added a settings page to manage the announcement and its display settings.
-  - Enqueued Fonts for custom font options.
-  - Ensured all output is properly escaped for security.
-  - Updated the plugin to be compatible with the latest WordPress standards and practices.
-
 ## Upgrade Notice
 
-- **1.3.01**: Ensure compatibility with the latest WordPress version and benefit from improvements and bug fixes.
+- **1.3.05**: Ensure compatibility with the latest WordPress version and benefit from improvements and bug fixes.
 
 ## Screenshots
 
-No Screenshots
+1. ![Add New Announcement](core/includes/screenshot/Screenshot_add_new_announcement.png)
+2. ![Admin Dashboard Widget Display](core/includes/screenshot/Screenshot_admin_dashboard_widget_display.png)
+3. ![Feedback Display](core/includes/screenshot/Screenshot_feedback_display.png)
+4. ![Settings Display](core/includes/screenshot/Screenshot_setting_display.png)
 
 ## Support
 

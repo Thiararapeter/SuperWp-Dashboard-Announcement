@@ -5,13 +5,13 @@
  * @package       SUPERWPDAS
  * @author        Thiarara
  * @license       gplv2-or-later
- * @version       1.3.04
+ * @version       1.3.05
  *
  * @wordpress-plugin
  * Plugin Name:   Superwp Dashboard Announcement
  * Plugin URI:    https://wordpress.org/Superwp-Dashboard-Announcement
  * Description:   Superwp Dashboard Announcement is a WordPress plugin that allows you to easily add custom announcements to your WordPress dashboard for all users.
- * Version:       1.3.04
+ * Version:       1.3.05
  * Author:        Thiarara
  * Author URI:    https://profiles.wordpress.org/thiarara
  * Text Domain:   superwp-dashboard-announcement

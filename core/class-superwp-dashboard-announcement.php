@@ -51,8 +51,8 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 		 * @return	void
 		 */
 		public function __clone() {
-			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to clone this class.', 'superwp-dashboard-announcement' ), '1.3.01' );
-		}		
+			_doing_it_wrong( __FUNCTION__, esc_html__( 'You are not allowed to clone this class.', 'superwp-dashboard-announcement' ), '1.3.01' );
+		}				
 
 		/**
 		 * Disable unserializing of the class.
@@ -62,8 +62,8 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 		 * @return	void
 		 */
 		public function __wakeup() {
-			_doing_it_wrong( __FUNCTION__, __( 'You are not allowed to unserialize this class.', 'superwp-dashboard-announcement' ), '1.3.01' );
-		}
+			_doing_it_wrong( __FUNCTION__, esc_html__( 'You are not allowed to unserialize this class.', 'superwp-dashboard-announcement' ), '1.3.01' );
+		}		
 
 		/**
 		 * Main Superwp_Dashboard_Announcement Instance.
@@ -130,9 +130,8 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 		 * @return  void
 		 */
 		public function load_textdomain() {
-			load_plugin_textdomain( 'superwp-dashboard-announcement', FALSE, dirname( plugin_basename( SUPERWPDAS_PLUGIN_FILE ) ) . '/languages/' );
-		}
-
+			load_plugin_textdomain( 'superwp-dashboard-announcement', false, dirname( plugin_basename( SUPERWPDAS_PLUGIN_FILE ) ) . '/languages/' );
+		}		
 	}
 
 	function superwp_dashboard_announcement_dashboard_widget() {
@@ -216,32 +215,41 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 			echo '<div class="dashboard-widget-container">'; // Opening container div
 			echo '<div id="superwp-dashboard-widget" class="superwp-dashboard-announcement-content" style="background-color: ' . esc_attr($background_color) . '; padding: 20px; border: 1px solid #ccc; text-align: left;">';
 			if ($is_announcement_available) {
-				if ($badge_display) {
-					echo '<span class="new-announcement-badge">' . esc_html($badge_name) . '</span>'; // Display badge name
-				} else {
-					echo '<span class="no-new-announcement-notice">No New Announcement</span>';
-				}
-				echo '<h2 style="font-family: ' . esc_attr($title_font) . '; font-size: ' . esc_attr($title_size) . '; color: ' . esc_attr($title_color) . '; text-align: ' . esc_attr($title_alignment) . '; font-weight: bold; margin-top: 20px;">' . stripslashes(esc_html($title)) . '</h2>';
+        if ($badge_display) {
+            echo '<span class="new-announcement-badge">' . esc_html($badge_name) . '</span>'; // Display badge name
+        } else {
+            // Ensure the background color for the badge is defined
+            $badge_background_color = get_option('superwp_dashboard_announcement_badge_background_color', '#ff0000'); // Default to red color
+            echo '<span class="no-new-announcement-notice" style="background-color: ' . esc_attr($badge_background_color) . '; border: 1px solid #ccc; padding: 5px 10px; border-radius: 50px; color: #ffcccc;">Announcement posted ' . esc_html(human_time_diff($announcement_timestamp, current_time('timestamp'))) . ' ago</span>';
+        }
+		echo '<h2 style="font-family: ' . esc_attr($title_font) . '; font-size: ' . esc_attr($title_size) . '; color: ' . esc_attr($title_color) . '; text-align: ' . esc_attr($title_alignment) . '; font-weight: bold; margin-top: 20px;">' . esc_html(stripslashes($title)) . '</h2>';
+        // Apply font family to the content directly
+        echo '<div style="font-size: ' . esc_attr($content_size) . '; color: ' . esc_attr($content_color) . '; text-align: ' . esc_attr($content_alignment) . '; font-weight: normal; font-family: ' . esc_attr($content_font) . '; border: 1px solid #ccc; padding: 10px;">' . wp_kses_post(stripslashes($content)) . '</div>';    
+        // Display the timestamp (date and time)
+        echo '<p style="margin-top: 10px;">Posted on: ' . esc_html(gmdate("F j, Y, g:i a", $announcement_timestamp)) . '</p>';
 	
-				// Apply font family to the content directly
-				echo '<div style="font-size: ' . esc_attr($content_size) . '; color: ' . esc_attr($content_color) . '; text-align: ' . esc_attr($content_alignment) . '; font-weight: normal; font-family: ' . esc_attr($content_font) . '; border: 1px solid #ccc; padding: 10px;">' . wp_kses_post(stripslashes($content)) . '</div>';	
-				// Display the timestamp (date and time)
-				echo '<p style="margin-top: 10px;">Posted on: ' . esc_html(date("F j, Y, g:i a", $announcement_timestamp)) . '</p>';
-	
-				// Feedback section
-				echo '<div class="feedback-section" style="margin-top: 20px;">';
-				echo '<h3 style="font-size: 18px; margin-bottom: 10px;">Share Your Feedback:</h3>';
-				echo '<form method="post">';
-				echo '<textarea name="feedback_message" id="feedback_message" placeholder="Type your feedback here" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>';
-				echo '<div style="margin-top: 10px;">';
-				echo '<select name="feedback_reaction" id="feedback_reaction" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 50%; margin: 0 auto; display: block;">';
-				echo '<option value="like">Like</option>';
-				echo '<option value="dislike">Dislike</option>';
-				echo '</select>';
-				echo '<button type="submit" name="submit_feedback" id="submit_feedback" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Submit</button>';
-				echo '</div>';
-				echo '</form>';
-				echo '</div>';
+		// Feedback section
+		echo '<div class="feedback-section" style="margin-top: 20px;">';
+		echo '<h3 style="font-size: 14px; margin-bottom: 10px;">Share Your Feedback:</h3>';
+		echo '<form method="post">';
+
+		// Place the select dropdown before the textarea
+		echo '<div style="margin-top: 10px;">';
+		echo '<select name="feedback_reaction" id="feedback_reaction" style="padding: 3px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; width: 30%; display: block;">';
+		echo '<option value="like">Like</option>';
+		echo '<option value="dislike">Dislike</option>';
+		echo '</select>';
+		echo '</div>';
+
+			// Textarea for entering feedback message
+			echo '<textarea name="feedback_message" id="feedback_message" placeholder="Type your feedback here" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" rows="4"></textarea>';
+
+			// Submit button for the form
+			echo '<button type="submit" name="submit_feedback" id="submit_feedback" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Submit Feedback</button>';
+
+			echo '</form>';
+			echo '</div>';  // Close feedback section div
+
 			} else {
 				echo '<h2>No Announcement Available</h2>';
 			}
@@ -299,6 +307,7 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 			echo '</div>';
 		}
 	}
+	
 	function superwp_dashboard_announcement_feedback_page() {
 		// Check user capabilities.
 		if (!current_user_can('manage_options')) {
@@ -349,33 +358,30 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 							</tr>
 						</thead>
 						<tbody>
-    <?php foreach ($feedback_data as $key => $feedback) : ?>
-        <tr>
-            <td><input type="checkbox" name="feedback_entry[]" value="<?= esc_attr($key) ?>"></td>
-            <td title="<?= esc_attr(stripslashes($feedback['announcement_title'])) ?>">
-                <?= esc_html(strlen($feedback['announcement_title']) > 30 ? substr($feedback['announcement_title'], 0, 30) . '...' : $feedback['announcement_title']) ?>
-                <?php if (strlen(stripslashes($feedback['announcement_title'])) > 30) : ?>
-                    <strong style="color: red;">(Hover To View Full Title)</strong>
-                <?php endif; ?>
-            </td>
-            <td title="<?= esc_attr(strlen($feedback['comment']) > 40 ? stripslashes($feedback['comment']) : '') ?>">
-                <?= esc_html(substr($feedback['comment'], 0, 40)) ?>
-                <?php if (strlen($feedback['comment']) > 40) : ?>
-                    <strong style="color: red;">...(Hover To View Full Comment)</strong>
-                <?php endif; ?>
-            </td>
-            <td><?= esc_html($feedback['user']) ?></td>
-            <td><?= esc_html($feedback['reaction']) ?></td>
-            <td><?= esc_html(date('Y-m-d H:i:s', $feedback['time'])) ?></td>
-        </tr>
-    <?php endforeach; ?>
-</tbody>
-
+						<?php foreach ($feedback_data as $key => $feedback) : ?>
+							<tr>
+							<td><input type="checkbox" name="feedback_entry[]" value="<?php echo esc_attr($key); ?>"></td>
+								<td title="<?php echo esc_attr(stripslashes($feedback['announcement_title'])) ?>">
+								<?php echo esc_html(strlen($feedback['announcement_title']) > 30 ? substr($feedback['announcement_title'], 0, 30) . '...' : $feedback['announcement_title']); ?>									<?php if (strlen(stripslashes($feedback['announcement_title'])) > 30) : ?>
+										<strong style="color: red;">(Hover To View Full Title)</strong>
+									<?php endif; ?>
+							</td>
+							<td title="<?php echo esc_attr(strlen($feedback['comment']) > 40 ? stripslashes($feedback['comment']) : ''); ?>">
+								<?php echo esc_html(substr($feedback['comment'], 0, 40)); ?>
+								<?php if (strlen($feedback['comment']) > 40) : ?>
+									<strong style="color: red;">...(Hover To View Full Comment)</strong>
+								<?php endif; ?>
+							</td>
+							<td><?php echo esc_html($feedback['user']); ?></td>
+							<td><?php echo esc_html($feedback['reaction']); ?></td>
+							<td><?php echo esc_html(gmdate('Y-m-d H:i:s', $feedback['time'])); ?></td>
+							</tr>
+						<?php endforeach; ?>
+					</tbody>
 					</table>
 					<button type="submit" name="delete_selected_feedback" id="delete_selected_feedback" class="button button-primary">Delete Selected</button>
 					<button type="submit" name="delete_all_feedback" id="delete_all_feedback" class="button button-primary">Wipe All</button>
 				</form>
-				
 			<?php else : ?>
 				<p>No feedback available.</p>
 			<?php endif; ?>
@@ -464,16 +470,16 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 		echo '</div>';
 		echo '<form method="post" action="">';
 		echo '<input type="hidden" name="superwp_dashboard_announcement_settings_nonce" value="' . esc_attr(wp_create_nonce('superwp_dashboard_announcement_settings')) . '">';
-	
+
 		// Decode HTML entities and remove additional slashes for the title
 		$title_value = htmlspecialchars_decode(stripslashes($title));
-		echo '<p><label for="superwp_dashboard_announcement_title">Announcement Title:</label>';
+		echo '<p><strong><label for="superwp_dashboard_announcement_title">Announcement Title:</label></strong>';
 		echo '<input type="text" id="superwp_dashboard_announcement_title" name="superwp_dashboard_announcement_title" value="' . esc_attr($title_value) . '" class="regular-text"></p>';
-	
-		echo '<p><label for="superwp_dashboard_announcement_badge_name">Badge Name (Optional):</label>'; // Add label for badge name
+
+		echo '<p><strong><label for="superwp_dashboard_announcement_badge_name">Badge Name (Optional):</label></strong>'; // Add label for badge name
 		echo '<input type="text" id="superwp_dashboard_announcement_badge_name" name="superwp_dashboard_announcement_badge_name" value="' . esc_attr($badge_name) . '" class="regular-text"></p>'; // Add input field for badge name
-	
-		echo '<p><label for="superwp_dashboard_announcement_content">Announcement Content:</label></p>';
+
+		echo '<p><strong><label for="superwp_dashboard_announcement_content">Announcement Content:</label></strong></p>';
 		// Decode HTML entities and remove additional slashes for the content
 		$content_value = htmlspecialchars_decode(stripslashes($content));
 		// Allow images in the WordPress editor
@@ -482,13 +488,13 @@ if ( ! class_exists( 'Superwp_Dashboard_Announcement' ) ) :
 			'media_buttons' => true, // Enable media buttons for inserting images
 		);
 		wp_editor($content_value, 'superwp_dashboard_announcement_content', $settings);
-	
-		echo '<p><input type="submit" name="superwp_dashboard_announcement_settings_submit" value="Publish Annoucement." class="button button-primary"></p>';
+
+		echo '<p><input type="submit" name="superwp_dashboard_announcement_settings_submit" value="Publish Announcement." class="button button-primary"></p>';
 		echo '</form>';
 		echo '<p style="text-align: center; margin-top: 20px;">Plugin created by Creative Designer Ke &copy; ' . esc_html(gmdate('Y')) . '</p>';
 		echo '</div>';
 	}
-	
+
 	function superwp_dashboard_announcement_settings_page() {
 		// Check user capabilities.
 		if (!current_user_can('manage_options')) {

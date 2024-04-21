@@ -7,7 +7,7 @@ Tags: dashboard announcement, admin dashboard announcement, Superwp Dashboard An
 Requires at least: 4.7
 Tested up to: 6.5
 Requires PHP: 5.1
-Stable tag: 1.3.04
+Stable tag: 1.3.05
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,12 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 
 == Changelog ==
 
+= 1.3.05: April 21, 2024 =
+- Rearranged the feedback form elements to position the reaction selection ("Like" or "Dislike") before the feedback input field for a more intuitive user experience.
+- Adjusted alignment settings for the feedback dropdown to align it to the left, enhancing the form's visual layout.
+- Updated inline CSS for better spacing and visual clarity in the feedback section, ensuring margins and paddings are explicitly defined for top, bottom, left, and right.
+- Enhanced the visual design of feedback notifications, incorporating rounded borders and custom padding to improve readability and user interaction.
+
 = 1.3.04: April 13, 2024 =
 - Fixed the issue of backslashes being added to the announcement title and content fields.
 - Resolved display problems in the announcement and feedback sections.
@@ -80,9 +86,13 @@ The Superwp Dashboard Announcement plugin automatically enqueues Google Fonts fo
 
 = 1.3.04 =
 This update addresses various display issues and improves the overall functionality of the Superwp Dashboard Announcement plugin. We recommend updating to the latest version for a better user experience.
+
 == Screenshots ==
 
-No Screenshots
+1. ![Add New Announcement](core/includes/screenshot/Screenshot_add_new_announcement.png)
+2. ![Admin Dashboard Widget Display](core/includes/screenshot/Screenshot_admin_dashboard_widget_display.png)
+3. ![Feedback Display](core/includes/screenshot/Screenshot_feedback_display.png)
+4. ![Settings Display](core/includes/screenshot/Screenshot_setting_display.png)
 
 ## Support
 
